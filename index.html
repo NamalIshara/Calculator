@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div>
+            <input type="text" id="display">
+        </div>
+        <div class="f-row">
+            <button onclick=" getDisplay('1'); " class="num-btn">1</button>
+            <button onclick=" getDisplay('2');"  class="num-btn">2</button>
+            <button onclick=" getDisplay('3');" class="num-btn">3</button>
+            <button onclick=" getDisplay('+');" class="op-btn">+</button>
+        </div>
+        <div class="s-row">
+            <button onclick=" getDisplay('4');" class="num-btn">4</button>
+            <button onclick=" getDisplay('5');" class="num-btn">5</button>
+            <button onclick=" getDisplay('6');" class="num-btn">6</button>
+            <button onclick=" getDisplay('-');" class="op-btn">-</button>
+        </div>
+        <div class="t-row">
+            <button onclick=" getDisplay('7');" class="num-btn">7</button>
+            <button onclick=" getDisplay('8');" class="num-btn">8</button>
+            <button onclick=" getDisplay('9');" class="num-btn">9</button>
+            <button onclick=" getDisplay('/');" class="op-btn">/</button>
+        </div>
+        <div class="fo-row">
+            <button onclick=" getDisplay('*');" class="op-btn">*</button>
+            <button onclick=" getDisplay('0');" class="num-btn">0</button>
+            <button onclick=" getDisplay('.');" class="op-btn">.</button>
+            <button onclick="calculate();" class="op-btn">=</button>
+            
+            
+        </div>
+        <div>
+            <button onclick="clearDisplay();" class="clear-btn">Clear</button>
+        </div>
+        
+        
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
